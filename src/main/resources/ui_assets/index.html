@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distributed-Search</title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" ></script>
+    <script type="text/javascript" src="/ui_assets/main.js" ></script>
+    <link type="text/css" href="/ui_assets/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="layout">
+        <h1> Insert your search query: </h1>
+        <div>
+            Your Search:
+            <input type="text" id="search_text" />
+        </div>
+        <div>
+            Number of results:
+            <input type="text" id="num_results" class="num_input" />
+        </div>
+        <div>
+            Minimum Score:
+            <input type="text" id="min_score" class="num_input" />
+        </div>
+        <div>
+            <button id="submit_button"> Search</button>
+        </div>
+        <div id="no_result_error"><br/> There is no result </div>
+        <div id="results">
+            Results
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document:</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>`
